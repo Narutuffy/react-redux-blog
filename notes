@@ -1,0 +1,6 @@
+React-Router: Updates the react components shown on the screen, depending on the URL
+BrowserRouter interacts with the history library and decides what to do based on the change inside URL
+Whenever Route has something like 'posts/5' the no. 5 is kind of a wild-card 
+If you look at it, routing is just rendering another state of the app (anyway app rerenders itself when state is changed, something like that)
+There are different lifecycle method for React. One of them is componentDidMount(). Another on is componentWillMount(), this is before the component mounts itself.
+Switch removes the fuziness in the routes behaviour. It maps the exact url from top to bottom
