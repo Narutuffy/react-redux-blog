@@ -3,7 +3,10 @@ BrowserRouter interacts with the history library and decides what to do based on
 Whenever Route has something like 'posts/5' the no. 5 is kind of a wild-card 
 If you look at it, routing is just rendering another state of the app (anyway app rerenders itself when state is changed, something like that)
 There are different lifecycle method for React. One of them is componentDidMount(). Another on is componentWillMount(), this is before the component mounts itself.
-Switch removes the fuziness in the routes behaviour. It maps the exact url from top to bottom. Therefore the most specific route should be at the top of the list
+Switch removes the fuzziness in the routes behaviour. It maps the exact url from top to bottom. Therefore the most specific route should be at the top of the list
 Instead of using anchor tags in React we use Link tags to navigate bw pages.
 To integrate redux form into our project we first import it into our global reducers and specifically give it a state name of form.
-The field component doesnt know how to show itself on the screen, only knows how to interacts with Redux form.
+The field component doesnt know how to show itself on the screen, only knows how to interacts with Redux form.Validate funciton will be autmatically called when form is submitted
+If errors object has a property assigned to it called title, it goes and attaches otself to that same property, and then field is sent as an argument to create the JSX component
+ReduxForm also passes additional properties to our component PostNew like the connect does to our containers
+There are three states of our forms that we create: pristine, touched, invalid
