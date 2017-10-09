@@ -10,3 +10,6 @@ The field component doesnt know how to show itself on the screen, only knows how
 If errors object has a property assigned to it called title, it goes and attaches otself to that same property, and then field is sent as an argument to create the JSX component
 ReduxForm also passes additional properties to our component PostNew like the connect does to our containers
 There are three states of our forms that we create: pristine, touched, invalid
+Whenever a react router renders a component it passes a whole bunch of helpers and objects for helping with navigation 
+_____NEW________
+REACT STATES SHOULD BE TRATED IMMUTABLE, HENCE NEW OBJECTS SHOULD BE CREATED EVERYTIME.
